@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#to run a python script.
+python "$PYFILE
