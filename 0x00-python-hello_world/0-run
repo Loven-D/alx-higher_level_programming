@@ -1,3 +1,2 @@
-#!/bin/bash
-#to run a python script.
+#!/bin/
 python3 $PYFILE
