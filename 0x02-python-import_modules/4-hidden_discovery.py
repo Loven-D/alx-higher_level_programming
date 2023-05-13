@@ -1,19 +1,9 @@
 #!/usr/bin/python3
-import importlib.util
-import dis
+import hidden_4
 
-spec = importlib.util.spec_from_file_location('hidden_4', 'hidden_4.pyc')
-module = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(module)
-
-# extract all names that meet the given criteria
-names = []
-for name in dir(module):
-    if not name.startswith('__'):
-        obj = getattr(module, name)
-        if not callable(obj):
-            names.append(name)
-
-# print the names in alphabetical order
-for name in sorted(names):
-    print(name)
+if __name__ == "__main__":
+    file = dir(hidden_4)
+    length = len(file)
+    for i in range(0, length):
+        if file[i][0:2] != "__":
+            print(file[i])
