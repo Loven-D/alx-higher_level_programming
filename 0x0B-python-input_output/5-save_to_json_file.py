@@ -7,7 +7,7 @@ import json
 
 def save_to_json_file(my_obj, filename):
     """ Function that writes an object to a text file
-    by a JSON representation """
+    by a JSON representation
 
     Args:
         my_obj: object
@@ -16,5 +16,6 @@ def save_to_json_file(my_obj, filename):
     Raises:
         Exception: when the object can't be encoded
 
+    """
     with open(filename, 'w', encoding="utf-8") as f:
         json.dump(my_obj, f)
