@@ -5,5 +5,5 @@ if (process.argv.length === 0) {
 } else if (process.argv.length === 1) {
   console.log('Arguments found');
 } else {
-    console.log('Arguments found');
+  console.log('Arguments found');
 }
