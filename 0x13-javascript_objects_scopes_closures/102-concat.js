@@ -10,9 +10,14 @@ if (process.argv.length !== 5) {
 const [, , sourceFileA, sourceFileB, destinationFile] = process.argv;
 
 try {
+  console.log(`Reading contents of ${sourceFileA}...`);
   const contentA = fs.readFileSync(sourceFileA, 'utf8');
+  console.log(`Contents of ${sourceFileA}: ${contentA}`);
+
   const contentB = fs.readFileSync(sourceFileB, 'utf8');
-  const concatenatedContent = contentA + contentB;
+  console.log(`Contents of ${sourceFileB}: ${contentB}`);
+
+  const concatenatedContent = contentA + '\n' + contentB;
 
   fs.writeFileSync(destinationFile, concatenatedContent);
 
