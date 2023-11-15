@@ -8,5 +8,5 @@ const initialList = data.list;
 const newList = initialList.map((value, index) => value * index);
 
 // Printing the initial and new lists
-console.log('Initial List:', initialList);
-console.log('New List:', newList);
+console.log(initialList);
+console.log(newList);
